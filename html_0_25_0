@@ -1,0 +1,1294 @@
+
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+<script>
+  try {
+    document.domain = 'youcanbook.me';
+  }
+  catch(err){
+    console.log("Silently failing to set domain.");
+  }
+</script>
+
+
+
+<html class="ltr " dir="ltr" lang="pt">
+	<head>
+		<title>Agendamento do Shiatsu do BIT Maua</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/resources/pics/appicons/book-144.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/resources/pics/appicons/book-114.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/resources/pics/appicons/book-72.png"/>
+<link rel="apple-touch-icon-precomposed" href="/resources/pics/appicons/book-57.png"/>
+<link rel="shortcut icon" type="image/png" href="/resources/pics/appicons/book-32.png"/>
+
+
+<link rel="stylesheet" href="/resources/css/addtohomescreen.css" type="text/css"/>
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/service/themes/softcell.css?v=2018-07-27T11:05:09Z" type="text/css"/> 
+
+<style type="text/css">
+    
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	 
+	
+	
+	
+
+	.admin-alert-message {
+		font-family: "Roboto", Calibri, Candara , Helvetica, Arial, sans-serif !important;
+		display: inline-block !important;
+		width: 100% !important;
+		border-radius: 4px !important;
+	    margin-top: 20px !important;
+	    margin-bottom: 20px !important;
+	    padding: 10px 30px 10px 15px !important;
+	    border-width: 1px !important;
+	    border-style: solid !important;
+	    font-weight: 400 !important;
+		border-color: #c9caca !important;
+	    background-color: #f8f8f9 !important;
+	    color: #757575 !important;
+		font-size:16px !important;
+		font-weight:400 !important;
+		clear:both !important;
+		text-align:left !important;
+		line-height: 1.42857143 !important;
+		box-sizing: border-box !important;
+		position: relative !important;
+	}
+	.admin-alert-message a {
+		font-family: "Roboto", Calibri, Candara , Helvetica, Arial, sans-serif !important;
+		color: #757575 !important;
+		font-weight: 500 !important;
+	}
+	.admin-alert-message small {
+		font-size: 12px !important;
+	}
+	.admin-alert-message .admin-alert-info {
+		position: absolute;
+		right:10px;
+		top:50%;
+		margin-top:-10px;
+	}
+	.admin-alert-message .admin-alert-q {
+		display: block;
+		font-size: 13px;
+		padding: 0;
+		border: 1px solid #757575;
+		border-radius: 50%;
+		width: 18px;
+		height: 18px;
+		text-align: center;
+		line-height: 17px;
+		position:relative;
+		z-index: 2;
+		text-decoration:none;
+	}
+	.admin-alert-message .admin-alert-q:hover,
+	.admin-alert-message .admin-alert-q:focus {
+		text-decoration:none;
+	}
+	.admin-alert-message .admin-alert-a {
+		display: block;
+	    position: absolute;
+	    right:-10px;
+	    margin-top:14px;
+	    min-width: 260px;
+	    border: 1px solid #ddd;
+	    border-radius: 5px;
+	    background-color: #fff;
+	    padding: 0 10px;
+	    font-size: 14px;
+		z-index: 1;
+	    max-height:0;
+	    opacity:0;
+	    transform: translateY(-10px);
+	    transition: transform 0.3s, opacity 0.3s, max-height 0.3s, padding 0.3s;
+	}
+	.admin-alert-message .admin-alert-q:hover + .admin-alert-a,
+	.admin-alert-message .admin-alert-q:focus + .admin-alert-a,
+	.admin-alert-a:hover {
+		border-width:1px;
+		max-height:200px;
+		opacity: 1;
+	    padding: 10px;
+		transform: translateY(0);
+	}
+	.admin-alert-message .admin-alert-a:before {
+	    content: '';
+	    display: block;
+	    width:0;
+	    height:0;
+	    border: 12px solid #ddd;
+	    border-color: transparent transparent #ddd transparent;
+	    position:absolute;
+		right: 6px;
+		top: -24px;
+		z-index: -2;
+	}
+	.admin-alert-message .admin-alert-a:after {
+	    content: '';
+	    display: block;
+	    width:0;
+	    height:0;
+	    border: 12px solid #fff;
+	    border-color: transparent transparent #fff transparent;
+	    position: absolute;
+		right: 6px;
+		top: -22px;
+		z-index: -1;
+	}
+
+</style>
+
+
+
+		<link rel="stylesheet" href="/resources/jquery-ui-1.8.23/themes/ui-lightness/jquery.ui.core.css" type="text/css"/>
+		<link rel="stylesheet" href="/resources/jquery-ui-1.8.23/themes/ui-lightness/jquery.ui.theme.css" type="text/css"/>
+		<link rel="stylesheet" href="/resources/jquery-ui-1.8.23/themes/ui-lightness/jquery.ui.datepicker.css" type="text/css"/>
+	</head>
+	<body>
+		<div class="content">
+			
+			<div class="header noImage noText">
+				<div class="headerStart"></div>
+				
+				<h1 class="title">Agendamento do Shiatsu do BIT Maua</h1>
+				
+				<div class="headerEnd"></div>
+			</div>
+			
+
+			<div class="main">
+				<div class="mainStart"></div>
+				
+				<div id="spinner"><img src="/resources/pics/spinner-big.gif"></div>
+				<div class="gridPage noFree noTimezone noJumpDate noPeriodButtons" id="gridPage" style="visibility:hidden;">
+					
+					
+					
+					<div role="form" aria-labelledby="formInstructions" class="grid cols4 showTechnicallyFree">
+						<div class="noFreeMessage"><span>não disponivel</span></div>
+						
+						<div class="paging pagingBefore pagingEmpty">
+							&nbsp;
+						</div>
+						
+						<div class="gridDays">
+							
+							
+							
+							
+							
+							
+							
+							
+							<div class="gridDay gridDayThu  dayNoFree">
+								<div class="gridHeader">
+									
+									
+									
+								  	<h4><span class="gridHeaderDayName" data-content="Qui"></span> <span class="gridHeaderDate" data-content="02/08/18"></span> <span id="col-header-3" class="gridHeaderFull">Quinta-feira, 2 de Agosto de 2018</span></h4>
+									
+								</div>
+								
+								
+								<div id="grid1533211200000" class="gridSlot gridBusy gridAm gridNoFree" >
+									<span>
+									09:00</span>
+								</div>
+								
+								
+								
+								<div id="grid1533212100000" class="gridSlot gridBusy gridAm gridNoFree" >
+									<span>
+									09:15</span>
+								</div>
+								
+								
+								
+								<div id="grid1533213000000" class="gridSlot gridBusy gridAm gridNoFree" >
+									<span>
+									09:30</span>
+								</div>
+								
+								
+								
+								<div id="grid1533213900000" class="gridSlot gridBusy gridAm gridNoFree" >
+									<span>
+									09:45</span>
+								</div>
+								
+								
+								
+								<div id="grid1533214800000" class="gridSlot gridBusy gridAm gridNoFree" >
+									<span>
+									10:00</span>
+								</div>
+								
+								
+								
+								<div id="grid1533215700000" class="gridSlot gridBusy gridAm gridNoFree" >
+									<span>
+									10:15</span>
+								</div>
+								
+								
+								
+								<div id="grid1533216600000" class="gridSlot gridBusy gridAm gridNoFree" >
+									<span>
+									10:30</span>
+								</div>
+								
+								
+								
+								<div id="grid1533217500000" class="gridSlot gridBusy gridAm gridNoFree" >
+									<span>
+									10:45</span>
+								</div>
+								
+								
+								
+								<div id="grid1533218400000" class="gridSlot gridBusy gridAm gridNoFree" >
+									<span>
+									11:00</span>
+								</div>
+								
+								
+								
+								<div id="grid1533219300000" class="gridSlot gridBusy gridAm gridNoFree" >
+									<span>
+									11:15</span>
+								</div>
+								
+								
+								
+								<div id="grid1533220200000" class="gridSlot gridBusy gridAm gridNoFree" >
+									<span>
+									11:30</span>
+								</div>
+								
+								
+								
+								<div id="grid1533221100000" class="gridSlot gridBusy gridAm gridNoFree" >
+									<span>
+									11:45</span>
+								</div>
+								
+								
+								
+								<div id="grid1533222000000" class="gridSlot gridBusy gridPm gridNoFree" >
+									<span>
+									12:00</span>
+								</div>
+								
+								
+								
+								<div id="grid1533222900000" class="gridSlot gridBusy gridPm gridNoFree" >
+									<span>
+									12:15</span>
+								</div>
+								
+								
+								
+								<div id="grid1533223800000" class="gridSlot gridBusy gridPm gridNoFree" >
+									<span>
+									12:30</span>
+								</div>
+								
+								
+								
+								<div id="grid1533224700000" class="gridSlot gridBusy gridPm gridNoFree" >
+									<span>
+									12:45</span>
+								</div>
+								
+								
+								
+								<div id="grid1533225600000" class="gridSlot gridBusy gridPm gridNoFree" >
+									<span>
+									13:00</span>
+								</div>
+								
+								
+								
+								<div id="grid1533226500000" class="gridSlot gridBusy gridPm gridNoFree" >
+									<span>
+									13:15</span>
+								</div>
+								
+								
+								
+								<div id="grid1533227400000" class="gridSlot gridBusy gridPm gridNoFree" >
+									<span>
+									13:30</span>
+								</div>
+								
+								
+								
+								<div id="grid1533228300000" class="gridSlot gridBusy gridPm gridNoFree" >
+									<span>
+									13:45</span>
+								</div>
+								
+								
+								
+								<div id="grid1533229200000" class="gridSlot gridBusy gridPm gridNoFree" >
+									<span>
+									14:00</span>
+								</div>
+								
+								
+								
+								<div id="grid1533230100000" class="gridSlot gridBusy gridPm gridNoFree" >
+									<span>
+									14:15</span>
+								</div>
+								
+								
+								
+								<div id="grid1533231000000" class="gridSlot gridBusy gridPm gridNoFree" >
+									<span>
+									14:30</span>
+								</div>
+								
+								
+								
+								<div id="grid1533231900000" class="gridSlot gridBusy gridPm gridNoFree" >
+									<span>
+									14:45</span>
+								</div>
+								
+								
+								
+								<div id="grid1533232800000" class="gridSlot gridBusy gridPm gridNoFree" >
+									<span>
+									15:00</span>
+								</div>
+								
+								
+								
+								<div id="grid1533233700000" class="gridSlot gridBusy gridPm gridNoFree" >
+									<span>
+									15:15</span>
+								</div>
+								
+								
+								
+								<div id="grid1533234600000" class="gridSlot gridBusy gridPm gridNoFree" >
+									<span>
+									15:30</span>
+								</div>
+								
+								
+								
+								<div id="grid1533235500000" class="gridSlot gridBusy gridPm gridNoFree" >
+									<span>
+									15:45</span>
+								</div>
+								
+								
+								
+								<div id="grid1533236400000" class="gridSlot gridBusy gridPm gridNoFree" >
+									<span>
+									16:00</span>
+								</div>
+								
+								
+								
+								<div id="grid1533237300000" class="gridSlot gridBusy gridPm gridNoFree" >
+									<span>
+									16:15</span>
+								</div>
+								
+								
+								
+								<div id="grid1533238200000" class="gridSlot gridBusy gridPm gridNoFree" >
+									<span>
+									16:30</span>
+								</div>
+								
+								
+								
+								<div id="grid1533239100000" class="gridSlot gridBusy gridPm gridNoFree" >
+									<span>
+									16:45</span>
+								</div>
+								
+								
+								
+								<div id="grid1533240000000" class="gridSlot gridBusy gridPm gridNoFree" >
+									<span>
+									17:00</span>
+								</div>
+								
+								
+								
+								<div id="grid1533240900000" class="gridSlot gridBusy gridPm gridNoFree" >
+									<span>
+									17:15</span>
+								</div>
+								
+								
+								
+								<div id="grid1533241800000" class="gridSlot gridBusy gridPm gridNoFree" >
+									<span>
+									17:30</span>
+								</div>
+								
+								
+								
+								<div id="grid1533242700000" class="gridSlot gridBusy gridPm gridNoFree" >
+									<span>
+									17:45</span>
+								</div>
+								
+								
+							</div>
+							
+							
+						</div>
+						
+						<div class="paging pagingAfter pagingEmpty">
+							&nbsp;
+						</div>
+						
+						<div style="clear:both;"></div>
+					</div>
+					
+				</div> 
+				<div class="mainEnd"></div>
+			</div> 
+			
+
+			
+
+			
+			<script type="text/javascript" src="/resources/scripts/ycbm.service.min.js?v=2018-07-27T11:05:09Z"></script>
+			
+			
+			
+
+			
+
+
+
+
+	
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  
+    
+      ga('create', 'UA-57420767-1', 'auto');
+    
+    
+  
+
+
+  ga('create', 'UA-155464-7', 'youcanbook.me', {'name': 'oldTracker'});
+  ga('require', 'linkid', 'linkid.js');
+  ga('set', 'dimension1', 'service');
+  ga('set', 'dimension2', 'Service');
+  
+  
+</script>
+
+	<script type="text/javascript">
+		ga('set', 'page', document.location.pathname);
+		ga('send', 'pageview');
+	</script>
+
+
+		</div>
+
+		<script type="text/javascript">
+		function highlight(gids) {
+			var gid = gids.split(",");
+			for(i = 0; i < gid.length; i++){
+				if ( $("#grid"+gid[i]).hasClass("gridTechnicallyFree") ) {
+					$("#grid"+gid[i]).addClass("gridTechnicallyFreeHighlight");
+				}
+				$("#grid"+gid[i]).removeClass("gridFree");
+				$("#grid"+gid[i]).removeClass("gridTechnicallyFree");
+				$("#grid"+gid[i]).removeClass("gridBusy");
+				$("#grid"+gid[i]).addClass("gridHighlight");
+			}
+		}
+		function resetHighlights() {
+			$(".gridHighlight").removeClass("gridTechnicallyFreeHighlight");
+			$(".gridHighlight").removeClass("gridHighlight");
+			
+			
+			
+			$("#grid1532952000000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533038400000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533124800000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533211200000").addClass("gridBusy");
+			
+			
+			
+			
+			
+			$("#grid1532952900000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533039300000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533125700000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533212100000").addClass("gridBusy");
+			
+			
+			
+			
+			
+			$("#grid1532953800000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533040200000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533126600000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533213000000").addClass("gridBusy");
+			
+			
+			
+			
+			
+			$("#grid1532954700000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533041100000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533127500000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533213900000").addClass("gridBusy");
+			
+			
+			
+			
+			
+			$("#grid1532955600000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533042000000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533128400000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533214800000").addClass("gridBusy");
+			
+			
+			
+			
+			
+			$("#grid1532956500000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533042900000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533129300000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533215700000").addClass("gridBusy");
+			
+			
+			
+			
+			
+			$("#grid1532957400000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533043800000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533130200000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533216600000").addClass("gridBusy");
+			
+			
+			
+			
+			
+			$("#grid1532958300000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533044700000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533131100000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533217500000").addClass("gridBusy");
+			
+			
+			
+			
+			
+			$("#grid1532959200000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533045600000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533132000000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533218400000").addClass("gridBusy");
+			
+			
+			
+			
+			
+			$("#grid1532960100000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533046500000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533132900000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533219300000").addClass("gridBusy");
+			
+			
+			
+			
+			
+			$("#grid1532961000000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533047400000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533133800000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533220200000").addClass("gridBusy");
+			
+			
+			
+			
+			
+			$("#grid1532961900000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533048300000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533134700000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533221100000").addClass("gridBusy");
+			
+			
+			
+			
+			
+			$("#grid1532962800000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533049200000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533135600000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533222000000").addClass("gridBusy");
+			
+			
+			
+			
+			
+			$("#grid1532963700000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533050100000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533136500000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533222900000").addClass("gridBusy");
+			
+			
+			
+			
+			
+			$("#grid1532964600000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533051000000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533137400000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533223800000").addClass("gridBusy");
+			
+			
+			
+			
+			
+			$("#grid1532965500000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533051900000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533138300000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533224700000").addClass("gridBusy");
+			
+			
+			
+			
+			
+			$("#grid1532966400000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533052800000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533139200000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533225600000").addClass("gridBusy");
+			
+			
+			
+			
+			
+			$("#grid1532967300000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533053700000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533140100000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533226500000").addClass("gridBusy");
+			
+			
+			
+			
+			
+			$("#grid1532968200000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533054600000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533141000000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533227400000").addClass("gridBusy");
+			
+			
+			
+			
+			
+			$("#grid1532969100000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533055500000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533141900000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533228300000").addClass("gridBusy");
+			
+			
+			
+			
+			
+			$("#grid1532970000000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533056400000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533142800000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533229200000").addClass("gridBusy");
+			
+			
+			
+			
+			
+			$("#grid1532970900000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533057300000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533143700000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533230100000").addClass("gridBusy");
+			
+			
+			
+			
+			
+			$("#grid1532971800000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533058200000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533144600000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533231000000").addClass("gridBusy");
+			
+			
+			
+			
+			
+			$("#grid1532972700000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533059100000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533145500000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533231900000").addClass("gridBusy");
+			
+			
+			
+			
+			
+			$("#grid1532973600000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533060000000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533146400000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533232800000").addClass("gridBusy");
+			
+			
+			
+			
+			
+			$("#grid1532974500000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533060900000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533147300000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533233700000").addClass("gridBusy");
+			
+			
+			
+			
+			
+			$("#grid1532975400000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533061800000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533148200000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533234600000").addClass("gridBusy");
+			
+			
+			
+			
+			
+			$("#grid1532976300000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533062700000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533149100000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533235500000").addClass("gridBusy");
+			
+			
+			
+			
+			
+			$("#grid1532977200000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533063600000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533150000000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533236400000").addClass("gridBusy");
+			
+			
+			
+			
+			
+			$("#grid1532978100000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533064500000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533150900000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533237300000").addClass("gridBusy");
+			
+			
+			
+			
+			
+			$("#grid1532979000000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533065400000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533151800000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533238200000").addClass("gridBusy");
+			
+			
+			
+			
+			
+			$("#grid1532979900000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533066300000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533152700000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533239100000").addClass("gridBusy");
+			
+			
+			
+			
+			
+			$("#grid1532980800000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533067200000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533153600000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533240000000").addClass("gridBusy");
+			
+			
+			
+			
+			
+			$("#grid1532981700000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533068100000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533154500000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533240900000").addClass("gridBusy");
+			
+			
+			
+			
+			
+			$("#grid1532982600000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533069000000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533155400000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533241800000").addClass("gridBusy");
+			
+			
+			
+			
+			
+			$("#grid1532983500000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533069900000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533156300000").addClass("gridBusy");
+			
+			
+			
+			$("#grid1533242700000").addClass("gridBusy");
+			
+			
+			
+		}
+		function policeColumns() {
+			$(".grid").css("width", "100%");
+			$(".grid").css("max-width", "100%");
+			var columns = $(".gridDay:visible, .paging");
+			var before = $(".pagingBefore");
+			var after = $(".pagingAfter");
+			columns.addClass("wideCol");
+			columns.removeClass("mediumCol");
+			columns.removeClass("narrowCol");
+			$("#gridPage").removeClass("singleCol");
+			if (before.offset().top != after.offset().top) {
+				columns.addClass("mediumCol");
+			}
+			if (before.offset().top != after.offset().top) {
+				columns.addClass("narrowCol");
+			}
+			if (before.offset().top != after.offset().top) {
+				columns.removeClass("narrowCol");
+				columns.removeClass("mediumCol");
+				columns.removeClass("wideCol");
+				$("#gridPage").addClass("singleCol");
+				$(".noFreeMessage").removeClass("modal");
+			}
+			else {
+				var w = 1;
+				columns.each(function(){
+					w = w + $(this).outerWidth(true);
+				});
+				if ($(".grid").css("padding-left")) w = w + parseInt($(".grid").css("padding-left"));
+				if ($(".grid").css("padding-right")) w = w + parseInt($(".grid").css("padding-right"));
+				if ($(".grid").css("border-left-width")) w = w + parseInt($(".grid").css("border-left-width"));
+				if ($(".grid").css("border-right-width")) w = w + parseInt($(".grid").css("border-right-width"));
+				$(".grid").css("width", w + "px");
+				$(".grid").css("max-width", w + "px");
+				$(".grid").css("margin", "0px auto");
+				$(".noFreeMessage").addClass("modal");
+			}
+		}
+		function updateTimeZone() {
+			$("#gridPage").css("visibility", "hidden");
+			$("#spinner").show();
+			if ($("#continent").val() == "UTC") {
+				$("#btz").val("UTC");
+			}
+			else {
+				$("#btz").val($("#zone" + $("#continent").val()).val());
+			}
+			$("#timeZoneForm").submit();
+		}
+		
+		$(document).ready(function() {
+			if ($.datepicker.regional['pt-BR']) {
+				$.datepicker.setDefaults($.datepicker.regional['pt-BR']);
+			}
+			else if ($.datepicker.regional['pt']) {
+				$.datepicker.setDefaults($.datepicker.regional['pt']);
+			}
+			else {
+				$.datepicker.setDefaults($.datepicker.regional['en-GB']);
+			}
+			$.datepicker.setDefaults({
+				dateFormat: "yy-mm-dd",
+				showOn: "both",
+				buttonText: "Ir para a data",
+				showAnim: "",
+				constrainInput: false ,
+				gotoCurrent: true
+			});
+			$("#jumpDate").datepicker();
+			$("button.ui-datepicker-trigger").wrapInner("<span>");
+			
+			$(".pageButton").click(function(){
+				$("#gridPage").css("visibility", "hidden");
+				$("#spinner").show();
+			});
+			$("select#continent, select[data-zone]").change(updateTimeZone);
+			$(".gridHeaderDayName, .gridHeaderDate").each(function(){
+				$(this).html($(this).data("content"));
+			});
+			$("#spinner").hide();
+			$("#gridPage").css("visibility", "visible");
+			policeColumns();
+			$(window).resize(policeColumns);
+		});
+		</script>
+		
+	</body>
+</html>
