@@ -12,7 +12,7 @@ def do_get(req):
 	return content
 
 def save_to_file(html, **kwargs):
-	file = "html_%s" % hour + "_%s" % minute + "_%s" % second
+	file = "html_%s_%s_%s" % (hour, minute, second)
 	with open(file, "w") as html_file:
 		html_file.write(html)
 
