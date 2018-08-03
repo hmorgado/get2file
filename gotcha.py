@@ -4,11 +4,11 @@ import datetime as dt
 
 class Writer:
 
-	def __init__(self, content, hour, minute, second):
-		self.content = content
-		self.hour = hour
-		self.minute = minute
-		self.second = second
+	def __init__(self, **kwargs):
+		self.content = kwargs.get('content')
+		self.hour    =    kwargs.get('hour')
+		self.minute  = kwargs.get('minute')
+		self.second  = kwargs.get('second')
 
 	def save_to_file(self):
 		file = "html_{hour}_{minute}_{second}".format(hour=self.hour, minute=self.minute, second=self.second)
@@ -40,9 +40,6 @@ req = urllib2.Request(site, headers=hdr)
 html = do_get(req)
 
 now = dt.datetime.now()
-hour = str(now.hour)
-minute = str(now.minute)
-second = str(now.second)
 
-writer = Writer(html, hour, minute, second)
+writer = Writer(content=html, hour=str(now.hour), minute=str(now.minute), second=str(now.second))
 writer.save_to_file()
