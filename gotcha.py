@@ -6,7 +6,7 @@ class Writer:
 
 	def __init__(self, **kwargs):
 		self.content = kwargs.get('content')
-		self.hour    =    kwargs.get('hour')
+		self.hour    = kwargs.get('hour')
 		self.minute  = kwargs.get('minute')
 		self.second  = kwargs.get('second')
 
