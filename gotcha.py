@@ -16,15 +16,21 @@ class Writer:
 			html_file.write(html)
 
 
+class HttpBlaster():
+	def __init__(self, **kwargs):
+		self.url = kwargs.get('url')
+		self.hdr = kwargs.get('hdr')
 
-def do_get(req):
-	try:
-		page = urllib2.urlopen(req)
-	except urllib2.HttpError, e:
-		print e.fp.read()
-	
-	content = page.read()
-	return content
+	def get_it_right_now(self):
+		req = urllib2.Request(self.url, headers=hdr)
+		
+		try:
+			page = urllib2.urlopen(req)
+		except urllib2.HttpError, e:
+			print e.fp.read()
+		
+		content = page.read()
+		return content
 
 # do if not exit
 hdr = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11',
@@ -34,10 +40,9 @@ hdr = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML,
        'Accept-Language': 'en-US,en;q=0.8',
        'Connection': 'keep-alive'}
 
-site = sys.argv[1]
-req = urllib2.Request(site, headers=hdr)
+http_blaster = HttpBlaster(url=sys.argv[1], hdr=hdr)
 
-html = do_get(req)
+html = http_blaster.get_it_right_now()
 
 now = dt.datetime.now()
 
