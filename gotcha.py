@@ -2,6 +2,21 @@ import urllib2, cookielib
 import sys
 import datetime as dt
 
+class Writer:
+
+	def __init__(self, content, hour, minute, second):
+		self.content = content
+		self.hour = hour
+		self.minute = minute
+		self.second = second
+
+	def save_to_file(self):
+		file = "html_{hour}_{minute}_{second}".format(hour=self.hour, minute=self.minute, second=self.second)
+		with open(file, "w") as html_file:
+			html_file.write(html)
+
+
+
 def do_get(req):
 	try:
 		page = urllib2.urlopen(req)
@@ -10,11 +25,6 @@ def do_get(req):
 	
 	content = page.read()
 	return content
-
-def save_to_file(html, **kwargs):
-	file = "html_{hour}_{minute}_{second}".format(**kwargs)
-	with open(file, "w") as html_file:
-		html_file.write(html)
 
 # do if not exit
 hdr = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11',
@@ -34,4 +44,5 @@ hour = str(now.hour)
 minute = str(now.minute)
 second = str(now.second)
 
-save_to_file(html, hour=hour, minute=minute, second=second)
+writer = Writer(html, hour, minute, second)
+writer.save_to_file()
